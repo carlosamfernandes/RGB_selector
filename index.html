@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>RGB colours</title>
+  </head>
+  <body>
+    <h1>Pick your colour and discover the RGB code:</h1>
+    <section class="selector">
+      <div class="red">
+        <label for="red">(R) Red: </label>
+        <input type="range" name="red" id="red" min="0" max="255" value="0" />
+        <input type="text" name="red" id="numbers-red" value="0" disabled />
+      </div>
+      <div class="green">
+        <label for="green">(G) Green: </label>
+        <input
+          type="range"
+          name="green"
+          id="green"
+          min="0"
+          max="255"
+          value="0"
+        />
+        <input type="text" name="green" id="numbers-green" value="0" disabled />
+      </div>
+      <div class="blue">
+        <label for="blue">(B) Blue: </label>
+        <input type="range" name="blue" id="blue" min="0" max="255" value="0" />
+        <input type="text" name="blue" id="numbers-blue" value="0" disabled />
+      </div>
+      <div id="colour-circle"></div>
+    </section>
+
+    <p><span id="rgb-text"></span></p>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
